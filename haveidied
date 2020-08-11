@@ -2,5 +2,5 @@
 if [ -s /home/jgurr/die ]; then 
 	curl https://www.thechronicle.com.au/tributes/all-locations/?keywords=Gurr | grep "JEREMY GURR" && echo "you died." && rm -rf /home/jgurr/ && touch sorry.txt && echo "Fuck you for looking at my hard drive. I am fucking dead you piece of shit" >> sorry.txt
 else 
-	exit 0
+	echo "probably alive" && exit 0
 fi 
